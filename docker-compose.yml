@@ -1,0 +1,10 @@
+version: '2'
+services:
+  server:
+    build: .
+    volumes:
+      - ./:/root/socket-memo
+    ports:
+      - "8888:8888"
+    command: npm run start
+    
